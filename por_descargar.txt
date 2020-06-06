@@ -1,0 +1,4 @@
+npm install socket.io --save
+npm install mongoose vue vue-router --save
+npm install --save nuxt
+npm install webpack webpack-cli --save-dev
