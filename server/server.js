@@ -1,15 +1,15 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'path';
 
 // Usar webpack
 
-const webpack = require('webpack');
-const webpackDevMiddleware = require('webpack-dev-middleware');
-const webpackConfig = require('./webpack.config.js');
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+const webpackConfig = require('../webpack.config.js');
 const compiler = webpack( webpackConfig );
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+import indexRouter from '../routes/index';
+import usersRouter from '../routes/users';
 
 const app = express();
 

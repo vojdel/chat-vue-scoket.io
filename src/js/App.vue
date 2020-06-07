@@ -6,7 +6,7 @@
   export default {
     data() {
       return {
-        title: "Welecome to Index!!!",
+        title: "Welcome to Index!!!",
       }
     },
   }
