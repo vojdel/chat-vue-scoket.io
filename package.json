@@ -11,6 +11,8 @@
     "prod": "webpack --mode production"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
     "cookie-parser": "~1.4.4",
     "css-loader": "^3.5.3",
     "debug": "~2.6.9",

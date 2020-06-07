@@ -1,8 +1,14 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 a {
   color: #00B7FF;
+}
+
+cuerpo {
+  min-height: 100vh;
+  min-width: 100vh;
 }
