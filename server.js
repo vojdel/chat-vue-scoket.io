@@ -1,4 +1,3 @@
-const http = require('http');
 const express = require('express');
 const path = require('path');
 
@@ -24,13 +23,17 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'src')));
 app.set('view engine', 'pug');
 
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// Create Server
-const server = http.createServer(app);
+const PORT = process.env.PORT || '3000';
 
 // Star Server
-server.listen('3000', () => {
-  console.debug("Server Listening on port 3000")
+app.listen(PORT, () => {
+  console.debug("Server Listening on port "+PORT);
+  console.log(PORT);
 });
